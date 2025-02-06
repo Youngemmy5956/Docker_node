@@ -4,7 +4,6 @@ import cors from "cors";
 import connectDB from "./config/mongo";
 import bodyParser from "body-parser";
 
-
 // Load environment variables from .env file
 dotenv.config();
 
@@ -31,8 +30,6 @@ app.use(bodyParser.json());
 
 // Connect to MongoDB
 connectDB();
-
-
 
 // Define a simple route
 app.get("/", (req: Request, res: Response) => {
